@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!--===== TOOLS FOR THE TOOL GOD =====-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+				    /Defs/ThingDef[	defName = "GN_1894Colt" ]/tools
+                    </xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>grip</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>2</power>
+                                <cooldownTime>1.54</cooldownTime>
+                                <chanceFactor>1.5</chanceFactor>
+                                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>muzzle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>2</power>
+                                <cooldownTime>1.54</cooldownTime>
+                                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>
+				    /Defs/ThingDef[ defName = "GN_1894Winchester" ]/tools
+                    </xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.55</cooldownTime>
+                                <chanceFactor>1.5</chanceFactor>
+                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>barrel</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>5</power>
+                                <cooldownTime>2.02</cooldownTime>
+                                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>muzzle</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.55</cooldownTime>
+                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>
+				    /Defs/ThingDef[	defName = "GN_M1GarandB"]/tools
+                    </xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>stock</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.55</cooldownTime>
+                                <chanceFactor>0.5</chanceFactor>
+                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>blade</label>
+                                <capacities>
+                                    <li>Cut</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.18</cooldownTime>
+                                <chanceFactor>0.5</chanceFactor>
+                                <armorPenetrationBlunt>0.36</armorPenetrationBlunt>
+                                <armorPenetrationSharp>0.32</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>point</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>18</power>
+                                <cooldownTime>1.19</cooldownTime>
+                                <chanceFactor>1.00</chanceFactor>
+                                <armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+                                <armorPenetrationSharp>1.5</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+                
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>GN_1894Colt</defName>
+                    <statBases>
+                        <Mass>0.95</Mass>
+                        <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+                        <SightsEfficiency>0.5</SightsEfficiency>
+                        <ShotSpread>0.2</ShotSpread>
+                        <SwayFactor>1.16</SwayFactor>
+                        <Bulk>2.54</Bulk>
+                        <WorkToMake>3000</WorkToMake>
+                    </statBases>
+                    <costList>
+                        <WoodLog>5</WoodLog>
+                        <Steel>20</Steel>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </costList>
+                    <Properties>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_44LeadBall</defaultProjectile>
+                        <warmupTime>0.6</warmupTime>
+                        <range>12</range>
+                        <soundCast>GN_Shot_1894Colt</soundCast>
+                        <soundCastTail>GunTail_Light</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>6</magazineSize>
+                        <reloadOneAtATime>true</reloadOneAtATime>
+                        <reloadTime>0.85</reloadTime>
+                        <ammoSet>AmmoSet_44LeadBall</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>Snapshot</aiAimMode>
+                    </FireModes>
+                    <weaponTags>
+                        <li>CE_Sidearm</li>
+                        <li>CE_AI_Pistol</li>
+                        <li>CE_OneHandedWeapon</li>
+                    </weaponTags>
+                </li>
+                
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>GN_1894Winchester</defName>
+                    <statBases>
+                        <Mass>3.10</Mass>
+                        <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+                        <SightsEfficiency>0.8</SightsEfficiency>
+                        <ShotSpread>0.07</ShotSpread>
+                        <SwayFactor>1.27</SwayFactor>
+                        <Bulk>9.60</Bulk>
+                        <WorkToMake>10000</WorkToMake>
+                    </statBases>
+                    <costList>
+                        <WoodLog>10</WoodLog>
+                        <Steel>50</Steel>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </costList>
+                    <Properties>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_30-30Winchester_FMJ</defaultProjectile>
+                        <warmupTime>1.1</warmupTime>
+                        <range>48</range>
+                        <soundCast>GN_Shot_1894Winchester</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>6</magazineSize>
+                        <reloadOneAtATime>true</reloadOneAtATime>
+                        <reloadTime>0.85</reloadTime>
+                        <ammoSet>AmmoSet_30-30Winchester</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>AimedShot</aiAimMode>
+                    </FireModes>
+                </li>
+                
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>GN_M1GarandB</defName>
+                    <statBases>
+                        <Mass>5</Mass>
+                        <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+                        <SightsEfficiency>0.8</SightsEfficiency>
+                        <ShotSpread>0.05</ShotSpread>
+                        <SwayFactor>1.63</SwayFactor>
+                        <Bulk>11.25</Bulk>
+                        <WorkToMake>17000</WorkToMake>
+                    </statBases>
+                    <costList>
+                        <WoodLog>15</WoodLog>
+                        <Steel>65</Steel>
+                        <ComponentIndustrial>2</ComponentIndustrial>
+                    </costList>
+                    <Properties>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+                        <warmupTime>1.1</warmupTime>
+                        <range>52</range>
+                        <soundCast>GN_Shot_M1GarandB</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>8</magazineSize>
+                        <reloadTime>4.3</reloadTime>
+                        <ammoSet>AmmoSet_3006Springfield</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        <aiAimMode>AimedShot</aiAimMode>
+                    </FireModes>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

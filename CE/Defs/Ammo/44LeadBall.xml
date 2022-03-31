@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo44LeadBall</defName>
+		<label>.44 Lead Ball</label>
+		<parent>AmmoPistols</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPistol</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_44LeadBall</defName>
+		<label>.44 Lead Ball</label>
+		<ammoTypes>
+			<Ammo_44LeadBall>Bullet_44LeadBall</Ammo_44LeadBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+	<ThingDef Class="CombatExtended.AmmoDef" Name="44LeadBallBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>A lead ball, fired by early, smoothbore firearms.</description>
+		<statBases>
+			<Mass>0.087</Mass>
+			<Bulk>0.12</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo44LeadBall</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44LeadBallBase">
+		<defName>Ammo_44LeadBall</defName>
+		<label>.44 Lead Ball</label>
+		<graphicData>
+			<texPath>Things/Ammo/Medieval/Musket/Ball</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.35</MarketValue>
+		</statBases>
+		<ammoClass>MusketBall</ammoClass>
+	</ThingDef>
+
+	<!-- ================== Projectile Base ================== -->
+	<ThingDef Name="44LeadBallBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/LeadBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles (Low Velocity) ================== -->
+	<ThingDef ParentName="44LeadBallBullet">
+		<defName>Bullet_44LeadBall</defName>
+		<label>.44 Lead Ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>4.0</armorPenetrationSharp>
+			<armorPenetrationBlunt>30</armorPenetrationBlunt>
+		</projectile>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_44LeadBall</defName>
+		<label>make .44 Lead Ball x500</label>
+		<description>Craft 500 .44 Lead Balls.</description>
+		<jobString>Making .44 Lead Balls.</jobString>
+		<workAmount>8800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>88</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_44LeadBall>500</Ammo_44LeadBall>
+		</products>
+	</RecipeDef>
+
+</Defs>
