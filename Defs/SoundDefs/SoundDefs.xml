@@ -2,7 +2,7 @@
 
 <Defs>
     <SoundDef>
-        <defName>GN_Shot_1894Colt</defName>
+        <defName>HRK_Shot_1894Colt</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -10,7 +10,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Shot_1894Colt</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_1894Colt</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -27,7 +27,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>GN_Shot_1894Winchester</defName>
+        <defName>HRK_Shot_1894Winchester</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -35,7 +35,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Shot_1894Winchester</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_1894Winchester</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -52,7 +52,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>GN_Shot_M1GarandB</defName>
+        <defName>HRK_Shot_M1GarandB</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -60,7 +60,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Shot_M1GarandB</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_M1GarandB</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -77,7 +77,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>GN_Interact_M1GarandB</defName>
+        <defName>HRK_Interact_M1GarandB</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -85,7 +85,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Interact_M1GarandB</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Interact_M1GarandB</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>

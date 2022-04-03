@@ -12,7 +12,7 @@
                 <!--===== TOOLS FOR THE TOOL GOD =====-->
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[	defName = "GN_1894Colt" ]/tools
+				    /Defs/ThingDef[	defName = "HRK_1894Colt" ]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -43,7 +43,7 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[ defName = "GN_1894Winchester" ]/tools
+				    /Defs/ThingDef[defName = "HRK_1894Winchester" ]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -84,7 +84,7 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[	defName = "GN_M1GarandB"]/tools
+				    /Defs/ThingDef[defName = "HRK_M1GarandB"]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -126,9 +126,9 @@
                         </tools>
                     </value>
                 </li>
-                
+
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_1894Colt</defName>
+                    <defName>HRK_1894Colt</defName>
                     <statBases>
                         <Mass>0.95</Mass>
                         <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
@@ -149,7 +149,7 @@
                         <defaultProjectile>Bullet_44LeadBall</defaultProjectile>
                         <warmupTime>0.6</warmupTime>
                         <range>12</range>
-                        <soundCast>GN_Shot_1894Colt</soundCast>
+                        <soundCast>HRK_Shot_1894Colt</soundCast>
                         <soundCastTail>GunTail_Light</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
@@ -169,9 +169,9 @@
                         <li>CE_OneHandedWeapon</li>
                     </weaponTags>
                 </li>
-                
+
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_1894Winchester</defName>
+                    <defName>HRK_1894Winchester</defName>
                     <statBases>
                         <Mass>3.10</Mass>
                         <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
@@ -192,7 +192,7 @@
                         <defaultProjectile>Bullet_30-30Winchester_FMJ</defaultProjectile>
                         <warmupTime>1.1</warmupTime>
                         <range>48</range>
-                        <soundCast>GN_Shot_1894Winchester</soundCast>
+                        <soundCast>HRK_Shot_1894Winchester</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
@@ -207,9 +207,9 @@
                         <aiAimMode>AimedShot</aiAimMode>
                     </FireModes>
                 </li>
-                
+
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_M1GarandB</defName>
+                    <defName>HRK_M1GarandB</defName>
                     <statBases>
                         <Mass>5</Mass>
                         <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
@@ -230,7 +230,7 @@
                         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
                         <warmupTime>1.1</warmupTime>
                         <range>52</range>
-                        <soundCast>GN_Shot_M1GarandB</soundCast>
+                        <soundCast>HRK_Shot_M1GarandB</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>

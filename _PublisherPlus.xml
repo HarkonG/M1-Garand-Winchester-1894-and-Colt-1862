@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>C:\Games\Steam\steamapps\common\RimWorld\Mods\M1-Garand-Winchester-1894-and-Colt-1862\.git</exclude>
+    <exclude>C:\Games\Steam\steamapps\common\RimWorld\Mods\M1-Garand-Winchester-1894-and-Colt-1862\README.md</exclude>
+  </Excluded>
+</Configuration>

@@ -4,12 +4,13 @@
 
   <!-- Winchester 1894 -->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_1894Winchester</defName>
+    <defName>HRK_Bullet_1894Winchester</defName>
     <label>Winchester 1894 bullet</label>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
       <speed>60</speed>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
     </projectile>
     <graphicData>
       <texPath>Things/Projectile/Bullet_big</texPath>
@@ -18,11 +19,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GN_1894Winchester</defName>
+    <defName>HRK_1894Winchester</defName>
     <label>Winchester 1894</label>
     <description>_</description>
     <graphicData>
-      <texPath>Things/Weapons/GN_1894Winchester</texPath>
+      <texPath>Things/Weapons/HRK_1894Winchester</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -54,10 +55,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_1894Winchester</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_1894Winchester</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>25.9</range>
-        <soundCast>GN_Shot_1894Winchester</soundCast>
+        <soundCast>HRK_Shot_1894Winchester</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -88,13 +89,14 @@
 
   <!-- M1 Garand -->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_M1GarandB</defName>
+    <defName>HRK_Bullet_M1GarandB</defName>
     <label>M1 Garand bullet</label>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>14</damageAmountBase>
       <stoppingPower>1.1</stoppingPower>
       <speed>60</speed>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
     </projectile>
     <graphicData>
       <texPath>Things/Projectile/Bullet_big</texPath>
@@ -103,15 +105,15 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GN_M1GarandB</defName>
-    <label>M1 Garand bayonet</label>
+    <defName>HRK_M1GarandB</defName>
+    <label>M1 Garand (bayonet)</label>
     <description>_</description>
     <graphicData>
-      <texPath>Things/Weapons/GN_M1GarandB</texPath>
+      <texPath>Things/Weapons/HRK_M1GarandB</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Rifle</soundInteract>
+    <soundInteract>HRK_Interact_M1GarandB</soundInteract>
     <statBases>
       <WorkToMake>10000</WorkToMake>
       <Mass>3</Mass>
@@ -138,10 +140,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_M1GarandB</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_M1GarandB</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>30.9</range>
-        <soundCast>GN_Shot_M1GarandB</soundCast>
+        <soundCast>HRK_Shot_M1GarandB</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -177,7 +179,7 @@
 
   <!-- Colt 1894 (snub-nosed) -->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_1894Colt</defName>
+    <defName>HRK_Bullet_1894Colt</defName>
     <label>Colt 1894 lead ball</label>
     <projectile>
       <damageDef>Bullet</damageDef>
@@ -191,11 +193,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GN_1894Colt</defName>
+    <defName>HRK_1894Colt</defName>
     <label>Colt 1894 (snub-nosed)</label>
     <description>_</description>
     <graphicData>
-      <texPath>Things/Weapons/GN_1894Colt</texPath>
+      <texPath>Things/Weapons/HRK_1894Colt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -231,10 +233,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_1894Colt</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_1894Colt</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>25.9</range>
-        <soundCast>GN_Shot_1894Colt</soundCast>
+        <range>18</range>
+        <soundCast>HRK_Shot_1894Colt</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
