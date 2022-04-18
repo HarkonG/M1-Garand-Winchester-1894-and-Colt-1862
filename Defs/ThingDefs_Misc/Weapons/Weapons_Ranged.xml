@@ -195,7 +195,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_1862Colt</defName>
     <label>Colt 1862 (snub-nosed)</label>
-    <description>_</description>
+    <description>The family of Colt Pocket Percussion Revolvers evolved from the earlier commercial revolvers marketed by the Patent Arms Manufacturing Company of Paterson, N.J. The smaller versions of Colt's first revolvers are also called "Baby Patersons" by collectors and were produced first in .28 to .31 caliber, and later in .44 caliber, by means of rebating the frame and adding a "step" to the cylinder to increase diameter.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_1862Colt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
