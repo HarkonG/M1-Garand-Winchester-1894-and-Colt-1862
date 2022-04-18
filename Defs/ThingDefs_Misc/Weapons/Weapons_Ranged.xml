@@ -2,10 +2,10 @@
 
 <Defs>
 
-  <!-- Winchester 1862 -->
+  <!-- Winchester 1894 -->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_1862Winchester</defName>
-    <label>Winchester 1862 bullet</label>
+    <defName>HRK_Bullet_1894Winchester</defName>
+    <label>Winchester 1894 bullet</label>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
@@ -19,11 +19,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>HRK_1862Winchester</defName>
-    <label>Winchester 1862</label>
-    <description>The Winchester Model 1862 rifle is a lever-action repeating rifle that became one of the most famous and popular hunting rifles of all time.</description>
+    <defName>HRK_1894Winchester</defName>
+    <label>Winchester 1894</label>
+    <description>The Winchester Model 1894 rifle is a lever-action repeating rifle that became one of the most famous and popular hunting rifles of all time.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_1862Winchester</texPath>
+      <texPath>Things/Weapons/HRK_1894Winchester</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -55,10 +55,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_1862Winchester</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_1894Winchester</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>25.9</range>
-        <soundCast>HRK_Shot_1862Winchester</soundCast>
+        <soundCast>HRK_Shot_1894Winchester</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
