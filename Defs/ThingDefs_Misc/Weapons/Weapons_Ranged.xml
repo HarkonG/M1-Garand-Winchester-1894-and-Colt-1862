@@ -2,10 +2,10 @@
 
 <Defs>
 
-  <!-- Winchester 1894 -->
+  <!-- Winchester 1862 -->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_1894Winchester</defName>
-    <label>Winchester 1894 bullet</label>
+    <defName>HRK_Bullet_1862Winchester</defName>
+    <label>Winchester 1862 bullet</label>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
@@ -19,11 +19,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>HRK_1894Winchester</defName>
-    <label>Winchester 1894</label>
-    <description>_</description>
+    <defName>HRK_1862Winchester</defName>
+    <label>Winchester 1862</label>
+    <description>The Winchester Model 1862 rifle is a lever-action repeating rifle that became one of the most famous and popular hunting rifles of all time.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_1894Winchester</texPath>
+      <texPath>Things/Weapons/HRK_1862Winchester</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -55,10 +55,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_1894Winchester</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_1862Winchester</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>25.9</range>
-        <soundCast>HRK_Shot_1894Winchester</soundCast>
+        <soundCast>HRK_Shot_1862Winchester</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -107,7 +107,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_M1GarandB</defName>
     <label>M1 Garand (bayonet)</label>
-    <description>_</description>
+    <description>The M1 Garand was one of the most famous rifles of the 20th Century, featuring a system that simultaneously ejects a spent cartridge from the firing chamber to make way for a fresh cartridge. This  proved to be a vital advantage for armies who wielded such a weapon at the time many others continued to use bolt-action rifles, due to the increased firing rate offered to soldiers in the field at the cost of a slight decrease in accuracy. The rifle itself would serve as the base design for many weapon derivatives developed in the 20th Century and beyond, with copies of the original weapon still in use by honour guards, civilians or rebels.\n\nThis particular rifle features a bayonet for close quarters combat at the cost of increasing the weight at the front, in turn reducing the weapon's accuracy. Many such rifles are preferred by those that favour melee combat. Most however are used for ceremonial duties.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_M1GarandB</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -177,10 +177,10 @@
     </tools>
   </ThingDef>
 
-  <!-- Colt 1894 (snub-nosed) -->
+  <!-- Colt 1862 (snub-nosed) -->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_1894Colt</defName>
-    <label>Colt 1894 lead ball</label>
+    <defName>HRK_Bullet_1862Colt</defName>
+    <label>Colt 1862 lead ball</label>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
@@ -193,11 +193,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>HRK_1894Colt</defName>
-    <label>Colt 1894 (snub-nosed)</label>
+    <defName>HRK_1862Colt</defName>
+    <label>Colt 1862 (snub-nosed)</label>
     <description>_</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_1894Colt</texPath>
+      <texPath>Things/Weapons/HRK_1862Colt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -233,10 +233,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_1894Colt</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_1862Colt</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>18</range>
-        <soundCast>HRK_Shot_1894Colt</soundCast>
+        <soundCast>HRK_Shot_1862Colt</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

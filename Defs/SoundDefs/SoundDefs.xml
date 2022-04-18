@@ -2,7 +2,7 @@
 
 <Defs>
     <SoundDef>
-        <defName>HRK_Shot_1894Colt</defName>
+        <defName>HRK_Shot_1862Colt</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -10,7 +10,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_1894Colt</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_1862Colt</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -27,7 +27,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>HRK_Shot_1894Winchester</defName>
+        <defName>HRK_Shot_1862Winchester</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -35,7 +35,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_1894Winchester</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_1862Winchester</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>

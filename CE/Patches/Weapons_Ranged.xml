@@ -12,7 +12,7 @@
                 <!--===== TOOLS FOR THE TOOL GOD =====-->
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[	defName = "HRK_1894Colt" ]/tools
+				    /Defs/ThingDef[	defName = "HRK_1862Colt" ]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -43,7 +43,7 @@
 
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[defName = "HRK_1894Winchester" ]/tools
+				    /Defs/ThingDef[defName = "HRK_1862Winchester" ]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -128,7 +128,7 @@
                 </li>
 
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>HRK_1894Colt</defName>
+                    <defName>HRK_1862Colt</defName>
                     <statBases>
                         <Mass>0.95</Mass>
                         <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
@@ -149,7 +149,7 @@
                         <defaultProjectile>Bullet_44LeadBall</defaultProjectile>
                         <warmupTime>0.6</warmupTime>
                         <range>12</range>
-                        <soundCast>HRK_Shot_1894Colt</soundCast>
+                        <soundCast>HRK_Shot_1862Colt</soundCast>
                         <soundCastTail>GunTail_Light</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
@@ -171,7 +171,7 @@
                 </li>
 
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>HRK_1894Winchester</defName>
+                    <defName>HRK_1862Winchester</defName>
                     <statBases>
                         <Mass>3.10</Mass>
                         <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
@@ -192,7 +192,7 @@
                         <defaultProjectile>Bullet_30-30Winchester_FMJ</defaultProjectile>
                         <warmupTime>1.1</warmupTime>
                         <range>48</range>
-                        <soundCast>HRK_Shot_1894Winchester</soundCast>
+                        <soundCast>HRK_Shot_1862Winchester</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
