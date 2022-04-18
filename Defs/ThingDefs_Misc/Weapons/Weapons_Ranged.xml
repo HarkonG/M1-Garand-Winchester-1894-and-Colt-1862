@@ -216,7 +216,8 @@
       <li>NeolithicRangedChief</li>
     </weaponTags>
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>25</Steel>
+      <WoodLog>5</WoodLog>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker>
