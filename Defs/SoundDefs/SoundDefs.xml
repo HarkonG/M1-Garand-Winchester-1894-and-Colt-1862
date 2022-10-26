@@ -9,8 +9,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_1862Colt</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_1862Colt</clipPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -34,8 +34,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_1894Winchester</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_1894Winchester</clipPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -59,8 +59,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_M1GarandB</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1GarandB</clipPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -84,8 +84,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Interact_M1GarandB</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Interact_M1GarandB</clipPath>
                     </li>
                 </grains>
                 <volumeRange>
