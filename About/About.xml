@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>M1 Garand, Winchester 1894 and Colt 1862</name>
+	<name>M1 Garand, Winchester 1894 &amp; Colt 1862</name>
 	<author>Harkon</author>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2412382876</url>
 	<packageId>Harkon.Other.GarandWinchesterColt</packageId>
@@ -9,7 +9,7 @@
 		<li>1.4</li>
 	</supportedVersions>
 	<description>
-	M1 Garand, Winchester 1894 and Colt 1862
+	M1 Garand, Winchester 1894 &amp; Colt 1862
 	</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
