@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="HRK_1862Colt"] </xpath>
+                    <xpath>Defs/ThingDef[defName="HRK_1862Colt"] </xpath>
                     <value>
                         <modExtensions>
                             <li Class="VFECore.ThingDefExtension">
@@ -15,7 +15,7 @@
                             </li>
                         </modExtensions>
                     </value>
-                </li>               
+                </li>
             </operations>
         </match>
     </Operation>
