@@ -178,7 +178,7 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_30-30Winchester_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_3030Winchester_FMJ</defaultProjectile>
                     <warmupTime>1.1</warmupTime>
                     <range>48</range>
                     <soundCast>HRK_Shot_1894Winchester</soundCast>
@@ -189,7 +189,7 @@
                     <magazineSize>6</magazineSize>
                     <reloadOneAtATime>true</reloadOneAtATime>
                     <reloadTime>0.85</reloadTime>
-                    <ammoSet>AmmoSet_30-30Winchester</ammoSet>
+                    <ammoSet>AmmoSet_3030Winchester</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiUseBurstMode>FALSE</aiUseBurstMode>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingCategoryDef>
-		<defName>Ammo30-30Winchester</defName>
+		<defName>Ammo3030Winchester</defName>
 		<label>.30-30 Winchester</label>
 		<parent>AmmoRifles</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
@@ -10,20 +10,20 @@
 
 	<!-- ==================== AmmoSet ========================== -->
 	<CombatExtended.AmmoSetDef>
-		<defName>AmmoSet_30-30Winchester</defName>
+		<defName>AmmoSet_3030Winchester</defName>
 		<label>.30-30 Winchester</label>
 		<ammoTypes>
-			<Ammo_30-30Winchester_FMJ>Bullet_30-30Winchester_FMJ</Ammo_30-30Winchester_FMJ>
-			<Ammo_30-30Winchester_AP>Bullet_30-30Winchester_AP</Ammo_30-30Winchester_AP>
-			<Ammo_30-30Winchester_HP>Bullet_30-30Winchester_HP</Ammo_30-30Winchester_HP>
-			<Ammo_30-30Winchester_Incendiary>Bullet_30-30Winchester_Incendiary</Ammo_30-30Winchester_Incendiary>
-			<Ammo_30-30Winchester_HE>Bullet_30-30Winchester_HE</Ammo_30-30Winchester_HE>
-			<Ammo_30-30Winchester_Sabot>Bullet_30-30Winchester_Sabot</Ammo_30-30Winchester_Sabot>
+			<Ammo_3030Winchester_FMJ>Bullet_3030Winchester_FMJ</Ammo_3030Winchester_FMJ>
+			<Ammo_3030Winchester_AP>Bullet_3030Winchester_AP</Ammo_3030Winchester_AP>
+			<Ammo_3030Winchester_HP>Bullet_3030Winchester_HP</Ammo_3030Winchester_HP>
+			<Ammo_3030Winchester_Incendiary>Bullet_3030Winchester_Incendiary</Ammo_3030Winchester_Incendiary>
+			<Ammo_3030Winchester_HE>Bullet_3030Winchester_HE</Ammo_3030Winchester_HE>
+			<Ammo_3030Winchester_Sabot>Bullet_3030Winchester_Sabot</Ammo_3030Winchester_Sabot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
 	<!-- ==================== Ammo ========================== -->
-	<ThingDef Class="CombatExtended.AmmoDef" Name="30-30WinchesterBase" ParentName="SmallAmmoBase" Abstract="True">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="3030WinchesterBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Ancient mid-late 19th century bullet traditionally loaded with 30 grains of blackpowder, typically used in repeating arms.</description>
 		<statBases>
 			<Mass>0.024</Mass>
@@ -34,12 +34,12 @@
 			<li>CE_AutoEnableCrafting</li>
 		</tradeTags>
 		<thingCategories>
-			<li>Ammo30-30Winchester</li>
+			<li>Ammo3030Winchester</li>
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_FMJ</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_FMJ</defName>
 		<label>.30-30 Winchester cartridge (FMJ)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/FMJ</texPath>
@@ -49,12 +49,12 @@
 			<MarketValue>0.11</MarketValue>
 		</statBases>
 		<ammoClass>FullMetalJacket</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_FMJ</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_FMJ</cookOffProjectile>
 	</ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_AP</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_AP</defName>
 		<label>.30-30 Winchester cartridge (AP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/AP</texPath>
@@ -64,11 +64,11 @@
 			<MarketValue>0.11</MarketValue>
 		</statBases>
 		<ammoClass>ArmorPiercing</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_AP</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_AP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_HP</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_HP</defName>
 		<label>.30-30 Winchester cartridge (HP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/HP</texPath>
@@ -78,11 +78,11 @@
 			<MarketValue>0.11</MarketValue>
 		</statBases>
 		<ammoClass>HollowPoint</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_HP</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_HP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_Incendiary</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_Incendiary</defName>
 		<label>.30-30 Winchester cartridge (AP-I)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/Incendiary</texPath>
@@ -92,11 +92,11 @@
 			<MarketValue>0.16</MarketValue>
 		</statBases>
 		<ammoClass>IncendiaryAP</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_Incendiary</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_Incendiary</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_HE</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_HE</defName>
 		<label>.30-30 Winchester cartridge (HE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/HE</texPath>
@@ -106,11 +106,11 @@
 			<MarketValue>0.25</MarketValue>
 		</statBases>
 		<ammoClass>ExplosiveAP</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_HE</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_HE</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="30-30WinchesterBase">
-		<defName>Ammo_30-30Winchester_Sabot</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="3030WinchesterBase">
+		<defName>Ammo_3030Winchester_Sabot</defName>
 		<label>.30-30 Winchester cartridge (Sabot)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Rifle/Sabot</texPath>
@@ -121,11 +121,11 @@
 			<Mass>0.018</Mass>
 		</statBases>
 		<ammoClass>Sabot</ammoClass>
-		<cookOffProjectile>Bullet_30-30Winchester_Sabot</cookOffProjectile>
+		<cookOffProjectile>Bullet_3030Winchester_Sabot</cookOffProjectile>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Base30-30WinchesterBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base3030WinchesterBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -138,8 +138,8 @@
 		<thingClass>CombatExtended.BulletCE</thingClass>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_FMJ</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_FMJ</defName>
 		<label>.30-30 Winchester bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>14</damageAmountBase>
@@ -149,8 +149,8 @@
 	</ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_AP</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_AP</defName>
 		<label>.30-30 Winchester bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>9</damageAmountBase>
@@ -159,8 +159,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_HP</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_HP</defName>
 		<label>.30-30 Winchester bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>18</damageAmountBase>
@@ -169,8 +169,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_Incendiary</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_Incendiary</defName>
 		<label>.30-30 Winchester bullet (AP-I)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>9</damageAmountBase>
@@ -185,8 +185,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_HE</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_HE</defName>
 		<label>.30-30 Winchester bullet (HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>14</damageAmountBase>
@@ -201,8 +201,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30-30WinchesterBullet">
-		<defName>Bullet_30-30Winchester_Sabot</defName>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3030WinchesterBullet">
+		<defName>Bullet_3030Winchester_Sabot</defName>
 		<label>.30-30 Winchester bullet (Sabot)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>7</damageAmountBase>
@@ -214,7 +214,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_FMJ</defName>
+		<defName>MakeAmmo_3030Winchester_FMJ</defName>
 		<label>make .30-30 Winchester cartridge (FMJ)  x500</label>
 		<description>Craft 500 .30-30 Winchester (FMJ) cartridges.</description>
 		<jobString>Making .30-30 Winchester (FMJ) cartridges.</jobString>
@@ -234,14 +234,14 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_FMJ>500</Ammo_30-30Winchester_FMJ>
+			<Ammo_3030Winchester_FMJ>500</Ammo_3030Winchester_FMJ>
 		</products>
 		<workAmount>2600</workAmount>
 	</RecipeDef>
 
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_AP</defName>
+		<defName>MakeAmmo_3030Winchester_AP</defName>
 		<label>make .30-30 Winchester cartridge (AP) cartridge x500</label>
 		<description>Craft 500 .30-30 Winchester  cartridge (AP) cartridges.</description>
 		<jobString>Making .30-30 Winchester  cartridge (AP) cartridges.</jobString>
@@ -261,13 +261,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_AP>500</Ammo_30-30Winchester_AP>
+			<Ammo_3030Winchester_AP>500</Ammo_3030Winchester_AP>
 		</products>
 		<workAmount>2600</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_HP</defName>
+		<defName>MakeAmmo_3030Winchester_HP</defName>
 		<label>make .30-30 Winchester  cartridge (HP) cartridge x500</label>
 		<description>Craft 500 .30-30 Winchester  cartridge (HP) cartridges.</description>
 		<jobString>Making .30-30 Winchester  cartridge (HP) cartridges.</jobString>
@@ -287,13 +287,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_HP>500</Ammo_30-30Winchester_HP>
+			<Ammo_3030Winchester_HP>500</Ammo_3030Winchester_HP>
 		</products>
 		<workAmount>2600</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_Incendiary</defName>
+		<defName>MakeAmmo_3030Winchester_Incendiary</defName>
 		<label>make .30-30 Winchester  (AP-I) cartridge x500</label>
 		<description>Craft 500 .30-30 Winchester  (AP-I) cartridges.</description>
 		<jobString>Making .30-30 Winchester  (AP-I) cartridges.</jobString>
@@ -322,13 +322,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_Incendiary>500</Ammo_30-30Winchester_Incendiary>
+			<Ammo_3030Winchester_Incendiary>500</Ammo_3030Winchester_Incendiary>
 		</products>
 		<workAmount>4200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_HE</defName>
+		<defName>MakeAmmo_3030Winchester_HE</defName>
 		<label>make .30-30 Winchester  (HE) cartridge x500</label>
 		<description>Craft 500 .30-30 Winchester  (HE) cartridges.</description>
 		<jobString>Making .30-30 Winchester  (HE) cartridges.</jobString>
@@ -357,13 +357,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_HE>500</Ammo_30-30Winchester_HE>
+			<Ammo_3030Winchester_HE>500</Ammo_3030Winchester_HE>
 		</products>
 		<workAmount>5400</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
-		<defName>MakeAmmo_30-30Winchester_Sabot</defName>
+		<defName>MakeAmmo_3030Winchester_Sabot</defName>
 		<label>make .30-30 Winchester  (Sabot) cartridge x500</label>
 		<description>Craft 500 .30-30 Winchester  (Sabot) cartridges.</description>
 		<jobString>Making .30-30 Winchester  (Sabot) cartridges.</jobString>
@@ -401,7 +401,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_30-30Winchester_Sabot>500</Ammo_30-30Winchester_Sabot>
+			<Ammo_3030Winchester_Sabot>500</Ammo_3030Winchester_Sabot>
 		</products>
 		<workAmount>3600</workAmount>
 	</RecipeDef>
