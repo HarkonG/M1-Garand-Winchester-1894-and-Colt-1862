@@ -125,7 +125,7 @@
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Base3030WinchesterBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base3030WinchesterBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
