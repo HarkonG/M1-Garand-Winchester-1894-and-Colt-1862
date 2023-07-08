@@ -247,28 +247,7 @@
             <li Class="PatchOperationReplace" MayRequire="CETeam.CombatExtendedGuns">
                 <xpath>Defs/ThingDef[defName="HRK_1862Colt"]/recipeMaker/researchPrerequisite</xpath>
                 <value>
-                    <researchPrerequisite>Gunpowder</researchPrerequisite>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace" MayRequire="CE_BlackPowderGuns_copy">
-                <xpath>Defs/ThingDef[defName="HRK_1862Colt"]/recipeMaker/researchPrerequisite</xpath>
-                <value>
-                    <researchPrerequisite>Stage1R_BP</researchPrerequisite>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace" MayRequire="CE_BlackPowderGuns_copy">
-                <xpath>Defs/ThingDef[defName="HRK_1862Colt"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
-                <value>
-                    <ammoSet>AmmoSet_36Shot</ammoSet>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace" MayRequire="CE_BlackPowderGuns_copy">
-                <xpath>Defs/ThingDef[defName="HRK_1862Colt"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
-                <value>
-                    <defaultProjectile>Bullet_36Shot_Ball</defaultProjectile>
+                    <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
                 </value>
             </li>
 
