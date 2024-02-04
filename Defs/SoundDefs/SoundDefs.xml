@@ -4,7 +4,7 @@
     <SoundDef>
         <defName>HRK_Shot_1862Colt</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
@@ -29,7 +29,7 @@
     <SoundDef>
         <defName>HRK_Shot_1894Winchester</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
@@ -54,7 +54,7 @@
     <SoundDef>
         <defName>HRK_Shot_M1GarandB</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
@@ -79,7 +79,7 @@
     <SoundDef>
         <defName>HRK_Interact_M1GarandB</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
